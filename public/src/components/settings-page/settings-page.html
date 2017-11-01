@@ -1,0 +1,49 @@
+<script type="text/ng-template" id="settings-page.html">
+    <div template="settings-page">
+
+        <form class="form-account">
+
+            <h1 class="title">Account Settings</h1>
+
+            <!--<div class="col-md-12 col-xs-12">-->
+            <md-input-container class="md-block text">
+                <label class="text">E-Mail</label>
+                <input ng-model="x.username" class="text" style="color: white;" disabled>
+            </md-input-container>
+
+            <!--</div>-->
+
+            <!--<div class="col-md-12 col-xs-12">-->
+            <md-input-container class="md-block">
+                <label class="text">First name</label>
+                <input ng-model="x.firstname" class="text">
+            </md-input-container>
+
+            <label>Allergies</label>
+            <br>
+            <md-checkbox md-no-ink aria-label="Checkbox No Ink" ng-model="x.allergies[0].dairyFree" class="md-primary">
+                Lactose Intolerant
+            </md-checkbox>
+            <md-checkbox md-no-ink aria-label="Checkbox No Ink" ng-model="x.allergies[0].nutAllergy" class="md-primary">
+                Nut Allergy
+            </md-checkbox>
+            <br>
+            <label>Enter ingredients to avoid</label>
+            <md-chips ng-model="x.allergies[0].other"  readonly="ctrl.readonly"
+                      md-removable="ctrl.removable" placeholder="Enter a ingredient..." class="text">
+                <md-chip-template>
+                    <strong>{{x.allergies[0].other[$index]}}</strong>
+                </md-chip-template>
+            </md-chips>
+            <!--</div>-->
+            <!--<div class="col-md-12 col-xs-12">-->
+            <md-button class="md-raised md-primary loginBtn" type="submit" ng-click="submit(x)">Save Changes</md-button>
+            <!--</div>-->
+        </form>
+        <!--<pre>-->
+            <!--{{x}}-->
+        <!--</pre>-->
+
+        </div>
+    </div>
+</script>

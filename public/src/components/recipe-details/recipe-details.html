@@ -1,0 +1,105 @@
+<script type="text/ng-template" id="recipe-details.html">
+    <div template="recipe-details">
+
+        <!--ng-style="{'background': 'url(' + x.image.smallImage + ') '}"-->
+
+            <div class="content image">
+                <div>
+                    <a ng-href="mailto:?Subject=Look at Foodie!&amp;Body=I%20saw%20this%20{{x.name}}%20and%20thought%20of%20you!%20http://localhost:8000/#!/recipe/{{x._id}}" class="pull-left ">
+                        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" class="social"/>
+                    </a>
+                    <a ng-href="https://twitter.com/share?url=http://localhost:8000&amp;text=Look%20at%20this%20meal%20{{x.name}}&amp;hashtags=foodie" target="_blank" class="pull-left">
+                        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" class="social"/>
+                    </a>
+                    <md-button class="md-raised md-primary" id="like-button" ng-click="like(x.name)">Like</md-button>
+
+                    <div class="recipe-details">
+                        <img class="img center-block" src="{{x.image.smallImage}}" />
+                    </div>
+                    <h2>{{x.name}}</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-xs-12 bar">
+                <div class="col-lg-3 col-md-3 col-xs-6 border-right">
+                    <h4>Carbohydrates</h4>
+                    <p>{{x.nutrition.carbohydrates}}</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-6 border-right">
+                    <h4>Fat</h4>
+                    <p>{{x.nutrition.totalFat}}</p>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-6 border-right">
+                    <h4>Protein</h4>
+                    <p>{{x.nutrition.protein}}</p>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-6">
+                    <h4>Calories</h4>
+                    <p>{{x.nutrition.calories}}kcal</p>
+                </div>
+            </div>
+
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <h4>Ingredients: </h4>
+            <ul ng-repeat ="y in x.ingredients track by $index">
+                <li> {{y}} </li>
+            </ul>
+                </div>
+            <div class="col-lg-5 col-md-6 col-xs-12">
+                <h4>Instructions: </h4>
+                <p ng-if="isString(x.instructions) == true">{{x.instructions}}</p>
+                <ol ng-if="isString(x.instructions) == false">
+                    <li ng-repeat ="y in x.instructions" class="ul-instructions">{{y}} </li>
+                </ol>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12 nutrition">
+                <h5 style="text-align: center">Saturated Fat: {{x.nutrition.saturatedFat}}</h5>
+                <h5 style="text-align: center">Cholesterol: {{x.nutrition.cholesterol}}</h5>
+                <h5 style="text-align: center">Sodium: {{x.nutrition.sodium}}</h5>
+                <h5 style="text-align: center">Sugar: {{x.nutrition.sugar}}</h5>
+                <h5 style="text-align: center">Fiber: {{x.nutrition.fiber}}</h5>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-md-offset-3 col-xs-12 reviewBox" ng-if="user.length > 0">
+            <h4>Write a review:</h4>
+
+            <md-input-container class="md-block">
+                Did you like the recipe?
+                <md-checkbox  ng-model="review.liked" class="md-primary"></md-checkbox>
+
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Description</label>
+                <input required md-no-asterisk name="description" ng-model="review.description">
+                <div ng-messages="projectForm.description.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+            <div class="reviewBtn">
+                <md-button class="md-raised md-primary" ng-click="submit($event)">Submit review</md-button>
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-xs-12" id="" ng-if="reviews.length > 0">
+            <md-list class="">
+                <md-subheader class="md-no-sticky">Reviews: </md-subheader>
+                <md-list-item class="md-3-line" ng-repeat="review in reviews">
+                    <div class="md-list-item-text " layout="column">
+                        <h3>{{ review.firstname }}</h3>
+                        <p>{{ review.description }}</p>
+
+                        <md-icon md-svg-src="../../static/img/ic_thumb_up_black_24px.svg" aria-label="android " ng-if="review.liked" id="icons"></md-icon>
+                        <md-icon md-svg-src="../../static/img/ic_thumb_down_black_24px.svg" aria-label="android " ng-if="!review.liked" id="icons"></md-icon>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+
+    </div>
+</script>

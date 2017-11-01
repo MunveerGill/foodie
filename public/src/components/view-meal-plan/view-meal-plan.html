@@ -1,0 +1,95 @@
+<script type="text/ng-template" id="view-meal-plan.html">
+    <div template="view-meal-plan">
+
+        <div class="col-lg-12 col-md-12 col-xs-12" style="text-align: center;">
+            <h1> View meal plan</h1>
+            <form name="myForm">
+                <label > Week beginning: </label>
+                <!--<select name="repeatSelect" id="repeatSelect" ng-model="chosen">-->
+                <!--<option ng-repeat="plan in x" value="{{plan.startDay}}" >{{plan.startDay}}</option>-->
+                <!--</select>-->
+                <select ng-model="chosen" ng-options="plan.startDay | date: 'dd/MM/yyyy' for plan in x" label="yo"></select>
+            </form>
+        </div>
+
+        <!--plan ={{me}}-->
+        <!--<div class="col-lg-12 col-md-12 col-xs-12 meals">-->
+            <!--<div class="col-md-4 col-xs-12">-->
+                <!--<label>Breakfast</label>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-xs-12">-->
+                <!--<label>Lunch</label>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-xs-12">-->
+                <!--<label>Dinner</label>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="meals">Breakfast</div>
+
+                <div ng-repeat ="breakfast in chosen.breakfast">
+                    <div ng-bind="getAllDays(chosen.startDay, chosen.duration, $index)" class="dates"></div>
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline"><a ui-sref="recipe({selectedRecipeId: breakfast._id})" target="_blank">{{breakfast.name}}</a></span>
+                            </md-card-title-text>
+                            <md-card-title-media ng-if="breakfast.name != 'Eating out'">
+                                <div ng-if="breakfast.image.smallImage" class="md-media-sm card-media"> <img src="{{breakfast.image.smallImage}}" class="image"> </div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <!--<md-card-actions layout="row" layout-align="end center" ng-if="breakfast.name == 'Eating out'">-->
+                            <!--<md-button ng-click="showPrompt($event)">Add</md-button>-->
+                        <!--</md-card-actions>-->
+                    </md-card>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="meals">Lunch</div>
+
+                <div ng-repeat ="lunch in chosen.lunch">
+                    <div ng-bind="getAllDays(chosen.startDay, chosen.duration, $index)" class="dates"></div>
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline"><a ui-sref="recipe({selectedRecipeId: lunch._id})" target="_blank">{{lunch.name}}</a></span>
+                            </md-card-title-text>
+                            <md-card-title-media ng-if="lunch.name != 'Eating out'">
+                                <div ng-if="lunch.image.smallImage" class="md-media-sm card-media"> <img src="{{lunch.image.smallImage}}" class="image"> </div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <!--<md-card-actions layout="row" layout-align="end center" ng-if="lunch.name == 'Eating out'">-->
+                            <!--<md-button ng-click="add('Lunch',$index)">Add</md-button>-->
+                        <!--</md-card-actions>-->
+                    </md-card>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="meals">Dinner</div>
+
+                <div ng-repeat ="dinner in chosen.dinner">
+                    <div ng-bind="getAllDays(chosen.startDay, chosen.duration, $index)" class="dates"></div>
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline"><a ui-sref="recipe({selectedRecipeId: dinner._id})" target="_blank">{{dinner.name}}</a></span>
+                            </md-card-title-text>
+                            <md-card-title-media ng-if="dinner.name != 'Eating out'">
+                                <div ng-if="dinner.image.smallImage" class="md-media-sm card-media"> <img src="{{dinner.image.smallImage}}" class="image"> </div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <!--<md-card-actions layout="row" layout-align="end center" ng-if="dinner.name == 'Eating out'">-->
+                            <!--<md-button ng-click="add('Dinner',$index)">Add</md-button>-->
+                        <!--</md-card-actions>-->
+                    </md-card>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</script>

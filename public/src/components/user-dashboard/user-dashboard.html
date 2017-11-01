@@ -1,0 +1,128 @@
+<script type="text/ng-template" id="user-dashboard.html">
+    <div template="user-dashboard">
+
+        <div ng-if="loggedIn == false">
+            <h4 ng-if="loggedIn == false">NOT LOGGED IN</h4>
+
+        </div>
+        <div ng-if="loggedIn == true">
+
+            <div class="container" id="admin-dashboard">
+                <div class="row">
+                    <div class="col-md-12 md-offset-6" style="margin-top: 50px">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="tile-title" ui-sref="recommendations">
+                                <img src="../../static/img/Recommendationicon3.svg" class="img-responsive center-block dashboardImgs"/>
+                                <span class="btn btn-primary btn-large btn-block">View Recommendations</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="tile-title" ui-sref="create-meal-plan">
+                                <img src="../../static/img/createmealplanicon.svg" class="img-responsive center-block dashboardImgs"/>
+                                <span class="btn btn-primary btn-large btn-block">Create Meal Plan</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="tile-title" ui-sref="view-meal-plan">
+                                <img src="../../static/img/mealplanicon2.svg" class="img-responsive center-block dashboardImgs"/>
+                                <span  class="btn btn-primary btn-large btn-block">View Meal Plan</span>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-3" ui-sref="question-bank">-->
+                            <!--<div class="tile-title">-->
+                                <!--<img src="./static/img/questionBank.svg" class="img-responsive center-block dashboardImgs"/>-->
+                                <!--<span class="btn btn-primary btn-large btn-block">Question Bank</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="col-md-4 col-xs-12">-->
+                <!--<md-list flex>-->
+                    <!--<md-subheader class="md-no-sticky">Recommendations:</md-subheader>-->
+                    <!--<md-list-item class="md-3-line" ng-repeat="x in recommendations">-->
+                            <!--<img ng-src="{{x.image.smallImage}}" class="md-avatar"/>-->
+                            <!--<div class="md-list-item-text" layout="column">-->
+                                <!--<a ui-sref="recipe({selectedRecipeId: x._id})">-->
+                                <!--<h3>{{ x.name }}</h3>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                    <!--</md-list-item>-->
+                <!--</md-list>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-xs-12">-->
+                <!--<div ng-if="providedPersonalisedInfo">-->
+                    <!--<p>Do you want a <a ui-sref="macro-calculator">personalised plan?</a></p>-->
+                    <!--<p>Personalising your plan allows you to get the right amount of macro-nutrients for your body</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-xs-12">-->
+                <!--<div ng-if="meal">-->
+                    <!--<h1>Todays meal plan</h1>-->
+                    <!--<pre>{{meal}}</pre>-->
+                    <!--<h3>Total proteins: {{meal.protein}}g</h3>-->
+                    <!--<h3>Total fats: {{meal.fat}}g </h3>-->
+                    <!--<h3>Total carbohydrates: {{meal.carbohydrates}}g</h3>-->
+                    <!--<a ui-sref="view-meal-plan">View meal plan</a>-->
+                <!--</div>-->
+                <!--<div ng-if="!meal">-->
+                    <!--<a ui-sref="create-meal-plan">Create Meal Plan</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+</script>
+<script type="text/ng-template" id="likes-modal.html">
+    <div template="user-dashboard">
+
+        <div class="modal-header centre-text">
+            <div class="modal-title" ng-show="showStep(0)"> <h2 class="newFont">Hello  {{x.firstname}}!<br> Welcome to Foodie</h2> <br>First of all, so I can learn a bit more about you, can you let me know of any allergies/dietary restrictions? (Press next if none)</div>
+
+            <p class="modal-title" ng-show="showStep(1)">Choose 10 recipes that interest you</p>
+            <md-progress-linear md-mode="determinate" value="{{progressBar}}" ng-show="showStep(1)"></md-progress-linear>
+        </div>
+        <div ng-show="error">
+            <div class="alert alert-danger" role="alert">Still need to choose {{left}} more</div>
+        </div>
+        <div ng-show="showStep(0)">
+
+            <div class="modal-body">
+                <md-checkbox ng-model="checkbox.allergies.dairyFree" aria-label="Checkbox 1" class="md-primary">Dairy Free</md-checkbox>
+                <md-checkbox ng-model="checkbox.allergies.nutAllergy" aria-label="Checkbox 1" class="md-primary">Nut Allergy</md-checkbox>
+            <br>
+            <label>Other (Type in ingredients to avoid below)</label>
+            <md-chips ng-model="checkbox.allergies.other" readonly="readonly" md-removable="" placeholder="Enter a ingredient..."></md-chips>
+        </div>
+        </div>
+
+            <div ng-show='showStep(1)'>
+                <div class="modal-body">
+                    <div ng-repeat="recc in recc" style="margin-bottom: 5px;" >
+                        <div class="col-md-3 col-xs-6" >
+                            <a ng-model="recc.name" ng-click="likes(recc.name);" class="imgs" ng-class="{'selected':  colour(recc.name)}">
+                                <figure>
+                                    <img src="{{recc.image.smallImage}}" width="120px" height="110px" >
+                                    <figcaption>{{recc.name}}</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--<button class="btn btn-primary" type="button" ng-click="next(checkbox)">OK</button>-->
+        </div>
+        <div class="modal-footer ">
+            <div class='footer-stuff centre-text'>
+                <md-button class="md-raised md-primary loginBtn" type="submit" ng-click="next(checkbox)" ng-hide='currentStep == 1'>Next</md-button>
+                <!--<button class='btn next' ng-click='next(checkbox)' ng-hide='currentStep == 1'>Next</button>-->
+                <!--<button class="btn btn-warning done center" ng-click="submitLikes()" ng-show='currentStep == 1' >Done</button>-->
+                <md-button class="md-raised md-primary loginBtn" ng-click="submitLikes()" ng-show='currentStep == 1'>Done</md-button>
+
+            </div>
+        </div>
+    </div>
+</script>

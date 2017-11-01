@@ -1,0 +1,37 @@
+<script type="text/ng-template" id="landing-page.html">
+    <div template="landing-page">
+
+        <div class="col-md-12 search">
+            <div class="form-group col-md-6 col-md-offset-3 searchBox centreBtn">
+                <h1>Find a recipe</h1>
+                <p>Separate ingredients with a [space]</p>
+                <input type="text" ng-model="search.input" class="form-control">
+                <md-button id="btn" type="button" class="md-raised md-primary btn btn-primary centreBtn" ng-click="searchClick(search.input)">Search</md-button>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-12 col-xs-12 " style="column-count: 4; column-width: auto; column-gap: 2em;">
+            <div ng-repeat="x in x |limitTo:pageSize"  style="break-inside: avoid;">
+                <a ui-sref="recipe({selectedRecipeId: x._id})" ng-if="x.image.smallImage.length > 0" >
+                    <!--<div class="col-lg-3 col-md-3 col-xs-6 ">-->
+                        <!-- TODO: check if small image available, if not use large image-->
+                        <img src="{{x.image.smallImage}}" width="200px" height="200px">
+                        <p>{{x.name}}</p>
+                    <!--</div>-->
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-lg-12 col-xs-12 centreBtn" ng-if="x.length >0">
+            <md-button class="md-raised md-primary" ng-click="more(x)">
+                more
+            </md-button>
+        </div>
+        <div ng-if = "x.length == 0">
+            <div class="center-block">
+                <h1 class="center-block"> No recipes found! </h1>
+                <h3 class="center-block">Maybe you can create one?</h3>
+            </div>
+        </div>
+
+        </div>
+</script>

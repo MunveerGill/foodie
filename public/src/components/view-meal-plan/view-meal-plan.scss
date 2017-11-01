@@ -1,0 +1,21 @@
+[template=view-meal-plan] {
+  md-card{
+    height: 150px;
+  }
+  .meals{
+    background-color: #9E9E9E;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: auto;
+  }
+  .dates{
+    background-color: #EF6C00;
+    color: white;
+  }
+  h1{
+    font-family: foodieFont;
+
+  }
+}

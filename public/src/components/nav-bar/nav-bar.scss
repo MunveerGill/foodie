@@ -1,0 +1,50 @@
+[template=nav-bar] {
+  .header {
+    height:50px;
+    background: #e7e7e7;
+    //margin-bottom: 15px;
+  }
+
+  .navbar-brand {
+    color: white;
+    font-size: 30px;
+  }
+  .navbar{
+    color: white;
+    background-color: #E65100;
+    margin-bottom: 0px;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: #E0E0E0;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: white;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  #logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 0px;
+  }
+
+  @media (max-width: 767px) {
+    #logo {
+      margin-left: 5px;
+    }
+
+  }
+  .pointer{
+    cursor: pointer;
+  }
+
+}

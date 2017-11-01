@@ -1,0 +1,60 @@
+[template=meal-plan] {
+
+  .days{
+    background-color: #EF6C00;
+    border-radius: 3px;
+    color: white;
+  }
+  .meals{
+    background-color: #9E9E9E;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+    //width: 90%;
+    margin-right: auto;
+  }
+
+  .mpRecipeList li {
+    padding: 0 0 7px 0;
+    margin: 0 0 14px 0;
+    border-bottom: 1px solid #ddd;
+    float: left;
+    clear: both;
+    width: 547px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .hyphenate {
+    width: 100px;
+
+  }
+
+  .macros{
+    line-height: 60px;
+  }
+
+  .social{
+    img{
+      width: 35px;
+    }
+    //width: 35px;
+  }
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #section-to-print, #section-to-print * {
+      visibility: visible;
+    }
+    #section-to-print {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .card{
+    height: 200px;
+  }
+}

@@ -1,0 +1,32 @@
+[template=login] {
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #E65100;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 0 15px 44px 0 rgba(0, 0, 0, 0.2), 0 20px 43px 0 rgba(0, 0, 0, 0.19);
+  }
+  .form-control{
+    margin-bottom: 5px;
+  }
+  .center-header{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .loginBtn{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+  }
+  .text{
+    color: white;
+  }
+  body > div > div > login > div > form > md-input-container:nth-child(2) > label{
+    color: white;
+
+  }
+
+}

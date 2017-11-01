@@ -1,0 +1,924 @@
+[{
+    "username": "test3@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "No-bake orange cheesecake",
+        "Cedar Plank Spice-Rubbed Salmon",
+        "Fettuccini with Winter Greens and Poached Egg",
+        "One Skillet Chicken with Bacon and Green Beans",
+        "Brussels Sprouts and Sausage Parsnip Spiralized Pasta",
+        "Baked Chicken Parmesan",
+        "Italian Pulled Pork Ragu (Instant Pot, Slow Cooker, Stove)",
+        "Grilled lamb & potato crush",
+        "Sizzled lamb with Mexican salsa",
+        "Navarin of lamb & spring vegetables",
+        "Curried lamb & peas with tomato & onion salad",
+        "Clementine & honey couscous"
+    ]
+},{
+    "username": "test7@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Chocolate muffins with hot chocolate custard",
+        "Curried lamb & peas with tomato & onion salad",
+        "Beef & stout stew with carrots",
+        "Smoky Mexican meatball stew",
+        "Beef & salsa burgers",
+        "Steak Kebabs with Chimichurri",
+        "Italian Pulled Pork Ragu (Instant Pot, Slow Cooker, Stove)",
+        "Prawn & melon salad",
+        "Rigatoni with spiced prawns, tomatoes & chorizo",
+        "Spicy stuffed chillies",
+        "Clementine & honey couscous"
+
+    ]
+},{
+    "username": "test8@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Minted green bean salad",
+        "Courgette & lemon linguine",
+        "Hot butter bean salad with lemon",
+        "Sweet potato & rosemary soup with garlic toasts",
+        "Summer courgette risotto",
+        "Tomato passata",
+        "Mexican rice & bean salad",
+        "Stir-fried Savoy cabbage",
+        "Marinated feta in thyme & chilli oil",
+        "Butternut squash soup with chilli & crème fraîche",
+        "Cheesy cheddar & spaghetti puff",
+        "Banana yogurt pots"
+
+    ]
+},{
+    "username": "test9@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Beef & bean hotpot",
+        "Stir-fried Savoy cabbage",
+        "Marinated feta in thyme & chilli oil",
+        "Butternut squash soup with chilli & crème fraîche",
+        "Cheesy cheddar & spaghetti puff",
+        "Beef & salsa burgers",
+        "Steak Kebabs with Chimichurri",
+        "Italian Pulled Pork Ragu (Instant Pot, Slow Cooker, Stove)",
+        "Prawn & melon salad",
+        "Sizzled lamb with Mexican salsa",
+        "Cheesy French toast with ham & grilled vine tomatoes"
+    ]
+},{
+    "username": "test10@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Classic pancakes",
+        "Sizzled lamb with Mexican salsa",
+        "Grilled Brussels Sprouts with Balsamic Glaze",
+        "Lentil and Rice Bowls with Eggs and Bacon",
+        "Butternut Stuffed Turkey Tenderloin with Cranberries and Pecans",
+        "Spicy BBQ Spiced Pumpkin Seeds",
+        "Grilled Romaine, Corn and Chicken Salad with Salsa Dressing",
+        "Italian Pulled Pork Ragu (Instant Pot, Slow Cooker, Stove)",
+        "Prawn sweet chilli noodle salad",
+        "Salmon & broccoli cakes with watercress, avocado & tomato salad",
+        "Spicy fish stew",
+        "Mango tea loaf plait",
+        "Veal escalopes wrapped with prosciutto, sage & lemon (saltimbocca)"
+    ]
+},{
+    "username": "test11@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Easy Braised Chicken Drumsticks in Tomatillo Sauce (Instant Pot, Slow Cooker or Stove Top)",
+        "Turmeric Roasted Cauliflower Soup",
+        "Thai Chicken Peanut Lettuce Tacos",
+        "Spiralized Sweet Potato Latkes",
+        "Blueberry, peach & soured cream muffins",
+        "Fruit & nut yogurt",
+        "Summer soufflé omelette",
+        "Good-for-you granola",
+        "Mango tea loaf plait",
+        "Banana yogurt pots",
+        "Classic pancakes",
+        "Roasted swede with Parmesan",
+        "Marinated feta in thyme & chilli oil",
+        "Potato, Taleggio & spinach tart",
+        "One Skillet Chicken with Bacon and Green Beans",
+        "Baked Chicken Parmesan",
+        "Duck, apricot & pine nut pastilla",
+        "Chicken Sausage and Herb Stuffing"
+    ]
+},{
+    "username": "test12@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Beef & vegetable casserole",
+        "Tuna with peppery tomatoes & potatoes",
+        "Turkey Stuffed Peppers",
+        "Roast carrot soup with pancetta croutons",
+        "Hot & sour fish soup",
+        "Chicken Sweet Potato and Kale Soup",
+        "Lamb with thyme-roasted potatoes",
+        "Goat curry",
+        "Grilled Rosemary Lamb Chops",
+        "Indian minced lamb skewers",
+        "Sizzled lamb with Mexican salsa"
+    ]
+},{
+    "username": "test13@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Blueberry & lime cheesecake",
+        "Blueberry soured cream cake with cheesecake frosting",
+        "Cheesy onion pizza",
+        "Cherry Bakewell cake",
+        "Cherry swirl cheesecake",
+        "Chicken, sweet potato & coconut curry",
+        "Chilli con carne soup",
+        "Chocolate biscuit truffles",
+        "Hot & sour fish soup",
+        "Broccoli Cheese and Potato Soup",
+        "Chicken Sausage and Herb Stuffing"
+    ]
+},{
+    "username": "test14@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "All-American chocolate chunk cookies",
+        "Ultimate spaghetti carbonara",
+        "Chilli con carne soup",
+        "Chocolate biscuit truffles",
+        "Hot & sour fish soup",
+        "Broccoli Cheese and Potato Soup",
+        "Chicken Sausage and Herb Stuffing"
+    ]
+},{
+    "username": "test15@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Minted green bean salad",
+        "Pumpkin, spinach & black bean dopiaza",
+        "Olive oil-baked potatoes",
+        "Chilli pepper pumpkin with Asian veg",
+        "Coconut rice",
+        "Sweet potato & rosemary soup with garlic toasts",
+        "Tomato passata",
+        "Spinach & chickpea curry",
+        "Spicy spaghetti with garlic mushrooms",
+        "Crunchy chickpea salad",
+        "Vietnamese veggie hotpot"
+    ]
+},{
+    "username": "test16@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Chocolate orange marble cake",
+        "Spinach & pine nut lasagne",
+        "Crunchy chickpea salad",
+        "Minty pea & potato soup",
+        "Caramel poached peaches with blueberries",
+        "Sag aloo",
+        "Chickpeas with tomatoes & spinach",
+        "Spinach & green bean salad",
+        "Spicy spaghetti with garlic mushrooms",
+        "Spinach & chickpea curry",
+        "Mediterranean potato salad",
+        "Spinach & green bean salad",
+        "Vegetarian casserole",
+        "Panna cotta with apricot compote"
+    ]
+},{
+    "username": "test17@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Banana & blueberry muffins",
+        "Chicken, sweet potato & coconut curry",
+        "New York Cheesecake",
+        "Cheesy Baked Pumpkin Pasta",
+        "Breaded Chicken Cutlets with Deconstructed Guacamole",
+        "Summer Pasta Salad with Baby Greens",
+        "Green Harissa Salmon",
+        "Zucchini Carpaccio",
+        "Leftover Turkey Tacos with Brussels Sprout Slaw",
+        "Grilled Romaine, Corn and Chicken Salad with Salsa Dressing"
+    ]
+},{
+    "username": "test18@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Baked haggis",
+        "Herby asparagus & bacon tart",
+        "Chicken, sweet potato & coconut curry",
+        "Chilli con carne soup",
+        "Garlicky Shrimp Stir-fry with Shiitakes and Bok Choy",
+        "Updated Waldorf Salad Cups",
+        "Chicken and Lentil Soup",
+        "Breaded Chicken Cutlets with Deconstructed Guacamole",
+        "Fettuccini with Winter Greens and Poached Egg",
+        "One Skillet Chicken with Bacon and Green Beans"
+    ]
+},{
+    "username": "test19@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Classic white loaf",
+        "Roasted ratatouille pasta",
+        "Spiced apple pie",
+        "Grilled lamb & potato crush",
+        "Greek lamb & macaroni bake",
+        "Indian minced lamb skewers",
+        "Sizzled lamb with Mexican salsa",
+        "Sugar-crusted lamb",
+        "Beef & stout stew with carrots",
+        "Goat curry",
+        "Smoky Mexican meatball stew"
+    ]
+},{
+    "username": "test20@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Creamy aubergine curry",
+        "Creamy butter beans with crispy crumbs",
+        "Creamy courgette lasagne",
+        "Grilled Mediterranean veg with bean mash",
+        "Moroccan mushrooms with couscous",
+        "Spicy falafels",
+        "Fennel & lemon risotto",
+        "Citrus-cured salmon gravadlax",
+        "Garlicky Shrimp Stir-fry with Shiitakes and Bok Choy",
+        "Pasta with Italian Chicken Sausage, Escarole and Beans",
+        "Baked Chicken Parmesan",
+        "Pickle-Brined Baked Chicken Tenders"
+    ]
+},{
+    "username": "test21@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Cheese & chilli melts",
+        "Super-fast prawn noodles",
+        "Watercress & chicken stir-fry",
+        "Chickpea soup with coriander & lime",
+        "Grilled Thai salmon",
+        "Honey-mustard chicken pasta",
+        "Honeyed carrot soup",
+        "Jerusalem artichoke & horseradish soup",
+        "One-pot lentil chicken",
+        "Chicken Curry with Coconut Milk"
+    ]
+},{
+    "username": "test22@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Beef & vegetable casserole",
+        "Cheesy chops & chips",
+        "Haunted graveyard cake",
+        "Lemon drizzle cake",
+        "Chickpea soup with coriander & lime",
+        "Grilled Thai salmon",
+        "Honey-mustard chicken pasta",
+        "Honeyed carrot soup",
+        "Jerusalem artichoke & horseradish soup",
+        "One-pot lentil chicken",
+        "Grilled Garlic Dijon Herb Salmon"
+    ]
+},{
+    "username": "test23@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Baked sweet potatoes & beans",
+        "Mexican chicken stew",
+        "Prawn sweet chilli noodle salad",
+        "Salmon & broccoli cakes with watercress, avocado & tomato salad",
+        "Spicy fish stew",
+        "Warm Thai chicken & noodle salad",
+        "Grilled Romaine, Corn and Chicken Salad with Salsa Dressing",
+        "Chicken Curry with Coconut Milk"
+    ]
+},{
+    "username": "test24@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Annie's potato & tomato bake",
+        "Asparagus & salmon supper",
+        "Beef & caramelised onion sandwiches with horseradish",
+        "Broccoli pesto pasta",
+        "Spicy tomato baked eggs",
+        "Honey Teriyaki Drumsticks",
+        "Grilled Garlic Dijon Herb Salmon",
+        "Beef & vegetable casserole",
+        "Best Yorkshire puddings"
+
+    ]
+},{
+    "username": "test25@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Creamy courgette lasagne",
+        "Gnocchi & tomato bake",
+        "Pasta with creamy greens & lemon",
+        "Tomato & basil sauce",
+        "Easy veggie biriyani",
+        "Spicy harissa, aubergine & chickpea soup",
+        "Olive oil-baked potatoes",
+        "Black bean chilli",
+        "Squash & barley salad with balsamic vinaigrette",
+        "Pumpkin, spinach & black bean dopiaza",
+        "Tomato passata",
+        "Summer courgette risotto",
+        "Cherry & cinnamon conserve",
+        "Caponata",
+        "Sweet potato & rosemary soup with garlic toasts",
+        "Courgette & lemon linguine",
+        "Minted green bean salad",
+        "Really easy lemonade",
+        "Pomegranate dressing",
+        "Flatbread",
+        "Hot butter bean salad with lemon"
+    ]
+},{
+    "username": "test26@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Braised chicken chasseur",
+        "British onion soup",
+        "Potato & Savoy cabbage soup with bacon",
+        "Rich tomato soup with pesto",
+        "Smoked haddock chowder",
+        "Spiced root soup with crisp spiced onions",
+        "Chicken and Avocado Soup",
+        "Shepherd's Pie, Lightened Up",
+        "Skinny Chicken Enchiladas",
+        "Chicken Sweet Potato and Kale Soup" ,
+        "Shawarma-Spiced Grilled Chicken with Garlic Yogurt Sauce" ,
+        "Skillet Sweet Potato Chicken Hash with Eggs" ,
+        "Asian Lettuce Wrap Chicken Chopped Salad" ,
+        "Balsamic Chicken with Roasted Vegetables"
+
+    ]
+},{
+    "username": "test27@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "15-minute summer soup",
+        "Baked mushrooms with ricotta & pesto",
+        "Fish pie fillets",
+        "Pear, hazelnut & chocolate cake",
+        "Potato & salmon grill",
+        "Salmon, broccoli & potato bake",
+        "Spring vegetable soup with basil pesto",
+        "Smoked mackerel & potato bake",
+        "Rich paprika seafood bowl",
+        "Steamed fish with ginger & spring onion",
+        "Satay pork with crunchy apple salad",
+        "Vietnamese pork salad"
+
+    ]
+},{
+    "username": "test28@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Chorizo, new potato & haddock one-pot",
+        "Herb-crusted haddock",
+        "Maple-glazed hot dogs with mustardy onions",
+        "Pesto & olive-crusted fish",
+        "Smoked haddock & leek risotto",
+        "Pan-fried white fish with polenta & orange crust",
+        "Summer fish stew with rouille",
+        "Prawn & avocado escabèche",
+        "Salt & pepper squid with roast chilli dressing",
+        "Super-quick fish curry",
+        "Vietnamese prawn & noodle salad with crispy shallots",
+        "Thai shredded chicken & runner bean salad",
+        "Smoked mackerel & potato bake",
+        "Rich paprika seafood bowl",
+        "Steamed fish with ginger & spring onion",
+        "Satay pork with crunchy apple salad",
+        "Vietnamese pork salad"
+
+    ]
+},{
+    "username": "test29@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Beef & vegetable casserole",
+        "Best Yorkshire puddings",
+        "Honey mustard chicken pot with parsnips",
+        "One-pot chicken chasseur",
+        "Roast chicken & sticky carrots",
+        "Sticky lemon chicken",
+        "Ultimate roast potatoes",
+        "Baked Chicken Parmesan",
+        "Chickpea Tomato Soup with Rosemary (Instant Pot, Slow Cooker and Stove Top)",
+        "Lentil and Rice Bowls with Eggs and Bacon",
+        "Pickle-Brined Baked Chicken Tenders",
+        "Pasta with Italian Chicken Sausage, Escarole and Beans"
+
+    ]
+},{
+    "username": "test30@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Chocolate Tia Maria nuggets",
+        "Lemon & lime crush",
+        "Lemon curd & yogurt fool",
+        "Mars bar mousses",
+        "Raspberry & white chocolate traybake",
+        "Tia Maria cheesecake",
+        "Cheesy French toast with ham & grilled vine tomatoes",
+        "Avocado & chilli salad",
+        "Cheesy cheddar & spaghetti puff",
+        "Spinach & feta cannelloni",
+        "Gnocchi & tomato bake",
+        "Butternut squash soup with chilli & crème fraîche",
+        "Sweet & hot vegetable curry",
+        "Crispy cheese & guacamole tortillas",
+        "Marinated feta in thyme & chilli oil",
+        "Spinach & tomato tortillas"
+
+    ]
+},{
+    "username": "test31@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Butternut squash casserole",
+        "Curried squash, lentil & coconut soup",
+        "Italian bean & olive salad",
+        "Puy lentil, spiced roast carrot & feta salad",
+        "Sweet & hot vegetable curry",
+        "Crispy cheese & guacamole tortillas",
+        "Marinated feta in thyme & chilli oil",
+        "Spinach & tomato tortillas",
+        "Baked figs & goat's cheese with radicchio",
+        "Stir-fried Savoy cabbage",
+        "Garlicky greens",
+        "Roasted swede with Parmesan",
+        "Mediterranean salad tarts",
+        "Mexican rice & bean salad"
+
+    ]
+},{
+    "username": "test32@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Chicken stuffed with herby mascarpone",
+        "Creamy ham & mushroom pasta bake",
+        "Creamy pesto chicken with roasted tomatoes",
+        "Crispy chicken",
+        "Crumbly chicken & mixed vegetable pie",
+        "Mustard-stuffed chicken",
+        "Pizza margherita in 4 easy steps",
+        "Salmon & Puy lentil salad with olive dressing",
+        "Shepherd's pie potatoes"
+    ]
+},{
+    "username": "test33@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Best-ever brownies",
+        "Chicken stuffed with herby mascarpone",
+        "Chilli con carne",
+        "Chocolate orange & Grand Marnier truffle cake",
+        "Lamb & feta burgers with minty yogurt",
+        "Mustard-stuffed chicken",
+        "Spiced carrot & lentil soup",
+        "Stilton & chutney rarebit bites",
+        "Hot cumin lamb wrap with crunchy slaw & spicy mayo",
+        "Curried lamb & peas with tomato & onion salad",
+        "Greek lamb & macaroni bake",
+        "Navarin of lamb & spring vegetables",
+        "Indian minced lamb skewers",
+        "Sizzled lamb with Mexican salsa",
+        "Feta-crusted lamb with rich tomato sauce",
+        "Grilled lamb & potato crush"
+
+    ]
+},{
+    "username": "test34@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Best-ever brownies",
+        "Chicken & chorizo jambalaya",
+        "Chilli chicken one-pot",
+        "Chocolate fudge Easter cakes",
+        "Coq au vin",
+        "Lemon drizzle cake",
+        "Mustard-stuffed chicken",
+        "Seafood curry",
+        "Spice-crusted salmon with sautéed potatoes & spinach",
+        "Rigatoni with spiced prawns, tomatoes & chorizo",
+        "Cheat's chilli prawn noodles",
+        "Oven-baked fish & chips",
+        "Mediterranean fish stew with garlic toasts",
+        "Thai turkey stir-fry",
+        "Cheesy fish grills",
+        "Prawn & melon salad",
+        "Speedy prawn pilaf"
+
+    ]
+},{
+    "username": "test35@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Best-ever brownies",
+        "Italian broccoli & salmon bake",
+        "Italian cottage pie",
+        "Peach Melba cheesecake",
+        "Roast chicken & sticky carrots",
+        "Strawberry Pavlova",
+        "Summer-in-winter chicken",
+        "White chocolate berry cheesecake",
+        "Yummy scrummy carrot cake"
+    ]
+},{
+    "username": "test36@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "American blueberry pancakes",
+        "Caraway-roasted carrot & feta salad",
+        "Carrot & sesame burgers",
+        "Easy risotto with bacon & peas",
+        "Full of fibre",
+        "Italian-style beef stew",
+        "Jollof rice with chicken",
+        "Roasted coriander cauliflower",
+        "Speedy nachos",
+        "Sticky lemon chicken",
+        "Summer-in-winter chicken",
+        "The ultimate makeover: Lasagne",
+        "Wild rice & feta salad"
+    ]
+},{
+    "username": "test37@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Caramelised nuts",
+        "Chocolate crunch bars",
+        "Chocolate fondue & toasted marshmallow",
+        "Chunky chocolate nut bars",
+        "Classic sponge sandwich",
+        "Honey nut crunch pears",
+        "Hooting Halloween owls",
+        "Lemon star biscuits",
+        "No-cook chocolate tart",
+        "Orange pumpkin face cookies",
+        "Snowball truffles",
+        "Spiced potato wedges"
+    ]
+},{
+    "username": "test38@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "All-in-one chicken traybake",
+        "Asian aubergine & pork hotpot",
+        "Beef & vegetable casserole",
+        "Chicken with roots & chickpeas",
+        "Chickpea soup with coriander & lime",
+        "Grilled Thai salmon",
+        "Honey-mustard chicken pasta",
+        "Honeyed carrot soup",
+        "Jerusalem artichoke & horseradish soup",
+        "One-pot lentil chicken",
+        "Sausages with oregano, mushrooms & olives",
+        "Spiced carrot & lentil soup",
+        "Spicy root & lentil casserole",
+        "Summery chicken stir-fry",
+        "Thai beef stir-fry"
+    ]
+},{
+    "username": "test39@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Apple crumble loaf",
+        "Appleberry mulled wine",
+        "Apricot & marzipan twist",
+        "Artichoke focaccia",
+        "Bacon & Brie omelette wedges with summer salad",
+        "Cacciatore chicken",
+        "Caramelised onion & bacon tart",
+        "Cheesy garlic bread",
+        "Chicken & stuffing picnic pie",
+        "Chipotle hasselback sweet potatoes",
+        "Citrus-cured salmon gravadlax",
+        "Classic lasagne",
+        "Cranachan",
+        "Double cherry semi-freddo",
+        "Easy apple fruit cake"
+    ]
+},{
+    "username": "test40@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Battenberg cake",
+        "BBC Children in Need cupcakes",
+        "Best-ever brownies",
+        "Black Forest sundaes with brownies",
+        "Black velvet baby cakes",
+        "Blueberry Bircher pots",
+        "Chocolate & orange fudge squares",
+        "Coffee & walnut cake",
+        "Double chocolate cardamom pots",
+        "Pan-fried chicken in mushroom sauce",
+        "Fruity sponge cake",
+        "Hooting Halloween owls",
+        "Lebkuchen"
+    ]
+},{
+    "username": "test41@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "20-minute seafood pasta",
+        "All-in-one chicken, squash & new potato casserole",
+        "All-in-one roast chicken & veg",
+        "Better-than-baked beans with spicy wedges",
+        "Cheat's chilli prawn noodles",
+        "Chicken & mango stir fry",
+        "Chicken & white bean stew",
+        "Chicken chow mein",
+        "Chicken with roots & chickpeas",
+        "Chicken, fennel & tomato ragout",
+        "Chickpeas with tomatoes & spinach",
+        "Chilli con carne",
+        "Chocolate brownie cake",
+        "Chunky minestrone soup",
+        "Cinnamon Nutella cake",
+        "Classic lasagne",
+        "Easiest ever paella",
+        "Easy peasy lentil curry",
+        "Five-a-day tagine",
+        "Fragrant chicken curry with chick peas"
+    ]
+},{
+    "username": "test42@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "American blueberry pancakes",
+        "Bacon & mushroom risotto",
+        "Butternut squash & sage risotto",
+        "Chicken & chorizo jambalaya",
+        "Fennel & lemon risotto",
+        "Flat apple & vanilla tart",
+        "Garden herb chicken",
+        "Goat's cheese & thyme stuffed chicken",
+        "Halloween pumpkin cake",
+        "Honey mustard chicken pot with parsnips",
+        "Maple & mustard glazed ham",
+        "Pear & toffee muffins",
+        "Roast chicken with butternut squash, chorizo & chilli",
+        "Roasted fennel with tomatoes, olives & potatoes",
+        "Rosemary & balsamic chicken with roast onions",
+        "Salmon, strawberry & fennel salad"
+    ]
+},{
+    "username": "test43@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Beef & vegetable casserole",
+        "Braised chicken chasseur",
+        "Broccoli soup with cheese toasties",
+        "Chicken, sweet potato & coconut curry",
+        "Chilli con carne",
+        "Classic roast chicken & gravy",
+        "Classic scones with jam & clotted cream",
+        "Easy peasy lentil curry",
+        "Honeyed carrot soup",
+        "Instant meatballs with penne pasta",
+        "Italian vegetable soup",
+        "Leek, bacon & potato soup",
+        "Pan-fried chicken in mushroom sauce",
+        "Real tomato soup",
+        "Spicy root & lentil casserole",
+        "Spicy spaghetti with garlic mushrooms",
+        "Split pea & green pea smoked ham soup",
+        "Summer-in-winter chicken",
+        "Ultimate spaghetti carbonara"
+    ]
+},{
+    "username": "test44@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Chicken, goat's cheese & cherry tomato bake",
+        "Chicory roasted with thyme & bacon",
+        "Chocolate brownie cake",
+        "Chocolate dipped cherry cake",
+        "Courgette, bacon & brie gratin",
+        "Easy risotto with bacon & peas",
+        "Gratin of carrots & root vegetables",
+        "Microwave risotto primavera",
+        "Onion & goat's cheese tarts",
+        "Oven-baked risotto",
+        "Saffron wild rice",
+        "Sausage & lentil one-pot",
+        "Smoked fish cakes with poached eggs",
+        "Smoked haddock & leek risotto",
+        "Smoked salmon & celeriac dauphinoise",
+        "Warm chorizo, sweet potato & egg salad",
+        "Welsh goat's cheese & leek tart"
+    ]
+},{
+    "username": "test45@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "allergies" : {
+        "dairyFree" : true,
+        "nutAllergy" : true,
+        "vegan" : false,
+        "diabetic" : false,
+        "halal" : false,
+        "kosher" : false,
+        "vegetarian" : false,
+        "other" : [ "cucumber" ]
+    },
+    "likes": [
+        "American blueberry pancakes",
+        "Anzac biscuits",
+        "Apple flapjack crumble",
+        "Asparagus & cheese tart",
+        "Asparagus & Parmesan pastries",
+        "Asparagus coconut crêpes with sweet chilli sauce",
+        "Asparagus cream pasta",
+        "Bagels for brunch",
+        "Baked cherry cheesecake",
+        "Berry almond tartlets with white chocolate",
+        "Berry shortbread cheesecake slice",
+        "Best-ever brownies",
+        "Best-ever macaroni cheese",
+        "Black bean chilli"
+    ]
+},{
+    "username": "test46@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Apple pie samosas",
+        "Blueberry & lemon pancakes",
+        "Broccoli, chicken & cashew nut stir fry",
+        "Cheddar & black sesame seed straws",
+        "Cheesy fish grills",
+        "Cherry, choc & coconut tray bake",
+        "Chicken & bean enchiladas",
+        "Chicken & leek pies",
+        "Chicken biryani",
+        "Chicken breast with avocado salad",
+        "Crisp chicken bites",
+        "Crunchy granola with berries & cherries",
+        "Dagmar's detox salad",
+        "Falafel burgers",
+        "Feta & semi-dried tomato omelette",
+        "Feta, avocado & red pepper salad with honey-lime dressing",
+        "Fruit, oat & seed bars",
+        "Fruitburst muffins",
+        "Full of fibre",
+        "Goat's cheese & thyme stuffed chicken",
+        "Greek salad omelette"
+    ]
+},{
+    "username": "test47@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Chicken & mushroom puff pie",
+        "Chocolate brownie cake",
+        "Cream of wild mushroom soup",
+        "Creamy pesto chicken with roasted tomatoes",
+        "Deli pasta salad",
+        "Hearty pasta soup",
+        "Lemon panna cotta with blackberries & honey madeleines",
+        "Mini banoffee pies",
+        "Moroccan chickpea soup",
+        "Orange & white chocolate sponge",
+        "Oven-baked risotto",
+        "Pan-fried chicken in mushroom sauce",
+        "Pistachio cupcakes",
+        "Raspberry & milk chocolate cheesecake",
+        "Smoked salmon & lemon risotto",
+        "Sticky toffee pudding",
+        "Tomato & basil sauce",
+        "Versatile veg soup"
+    ]
+},{
+    "username": "test48@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "likes": [
+        "Apple flapjack crumble",
+        "Appleberry mulled wine",
+        "Aubergine melts",
+        "Autumn vegetable soup with cheesy toasts",
+        "Baked apples with prunes, cinnamon & ginger",
+        "Basic granary bread dough (for rolls or a large loaf)",
+        "Biscuity lime pie",
+        "Blueberry & lime cheesecake",
+        "Blueberry soured cream cake with cheesecake frosting",
+        "Cheesy onion pizza",
+        "Cherry Bakewell cake",
+        "Cherry swirl cheesecake",
+        "Chicken, sweet potato & coconut curry",
+        "Chilli con carne soup",
+        "Chocolate biscuit truffles",
+        "Chocolate caramel cake",
+        "Chocolate fudge Easter cakes"
+    ]
+},{
+    "username": "test49@lamye.com",
+    "password": "",
+    "firstname": "test",
+    "lastname": "testing",
+    "allergies" : {
+        "dairyFree" : true,
+        "nutAllergy" : true,
+        "vegan" : false,
+        "diabetic" : false,
+        "halal" : false,
+        "kosher" : false,
+        "vegetarian" : false,
+        "other" : [ "cucumber" ]
+    },
+    "likes": [
+        "Crock Pot Minestrone Soup",
+        "Parmesan Hasselback Sweet Potatoes with Balsamic Glaze",
+        "Slow Cooker 3-Bean Turkey Chili",
+        "Crock Pot Kalua Pork"
+    ]
+}
+]

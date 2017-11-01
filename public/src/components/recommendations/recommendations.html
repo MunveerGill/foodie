@@ -1,0 +1,44 @@
+<script type="text/ng-template" id="recommendations.html">
+    <div template="recommendations">
+
+        <div class="col-md-4 col-xs-12">
+        <md-list flex>
+        <md-subheader class="md-no-sticky">Breakfast Recommendations:</md-subheader>
+        <md-list-item class="md-3-line" ng-repeat="x in recommendations">
+        <img ng-src="{{x.image.smallImage}}" class="md-avatar"/>
+        <div class="md-list-item-text" layout="column">
+        <a ui-sref="recipe({selectedRecipeId: x._id})">
+        <h3>{{ x.name }}</h3>
+        </a>
+        </div>
+        </md-list-item>
+        </md-list>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <md-list flex>
+                <md-subheader class="md-no-sticky">Lunch Recommendations:</md-subheader>
+                <md-list-item class="md-3-line" ng-repeat="x in lunch">
+                    <img ng-src="{{x.image.smallImage}}" class="md-avatar"/>
+                    <div class="md-list-item-text" layout="column">
+                        <a ui-sref="recipe({selectedRecipeId: x._id})">
+                            <h3>{{ x.name }}</h3>
+                        </a>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <md-list flex>
+                <md-subheader class="md-no-sticky">Dinner Recommendations:</md-subheader>
+                <md-list-item class="md-3-line" ng-repeat="x in dinner">
+                    <img ng-src="{{x.image.smallImage}}" class="md-avatar"/>
+                    <div class="md-list-item-text" layout="column">
+                        <a ui-sref="recipe({selectedRecipeId: x._id})">
+                            <h3>{{ x.name }}</h3>
+                        </a>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+    </div>
+</script>

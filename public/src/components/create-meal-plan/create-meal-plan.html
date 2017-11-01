@@ -1,0 +1,22 @@
+<script type="text/ng-template" id="create-meal-plan.html">
+    <div template="create-meal-plan">
+
+        <form class="form form-signin">
+                <h3>1. How many days to plan?</h3>
+                <md-radio-group ng-model="form.duration">
+                    <md-radio-button value="5" class="md-primary">5 Days (Mon - Fri)</md-radio-button>
+                    <md-radio-button value="7" class="md-primary"> 7 Days (Mon - Sun) </md-radio-button>
+                </md-radio-group>
+                <h3>2. What meals would you like suggestions for?</h3>
+                <md-checkbox ng-model="form.checkbox.breakfast" aria-label="Checkbox 1" class="md-primary">Breakfast</md-checkbox>
+                <md-checkbox ng-model="form.checkbox.lunch" aria-label="Checkbox 1" class="md-primary">Lunch</md-checkbox>
+                <md-checkbox ng-model="form.checkbox.dinner" aria-label="Checkbox 1" class="md-primary">Dinner</md-checkbox>
+                <h3>3. Start day?</h3>
+                    <md-datepicker ng-model="form.startDay" md-placeholder="Enter date"></md-datepicker>
+            <br>
+            <md-button class="md-primary md-raised loginBtn" ng-click="next(checkbox)">
+                Next
+            </md-button>
+        </form>
+    </div>
+</script>

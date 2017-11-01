@@ -1,0 +1,213 @@
+<script type="text/ng-template" id="meal-plan.html">
+    <div template="meal-plan">
+
+        <a href="mailto:?Subject=Look at Foodie!&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20http://localhost:8000/" class="pull-right social">
+            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+        </a>
+        <a href="https://twitter.com/share?url=http://foodie.com&amp;text=Look%20at%20my%20meal%20plan&amp;hashtags=foodie" target="_blank" class="pull-right social">
+            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+        </a>
+        <h1 style="font-family: foodieFont; text-align:center">Meal planner</h1>
+        <h4 style="text-align:center">{{startDate}} - {{endDate}}</h4>
+        <md-button class="md-raised md-primary" ng-click="save($event)" style="text-align: center">Save</md-button>
+        <md-button class="md-raised md-primary pull-right" ng-click="print()">Print</md-button>
+
+        <div class="col-lg-12 col-md-12 col-xs-12 meals">
+            <div class="col-md-4 col-xs-12">
+                <label>Breakfast</label>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <label>Lunch</label>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <label>Dinner</label>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-xs-12" ng-repeat="day in days">
+            <div class="col-lg-12 col-md-12 col-xs-12 days">
+                <h3 class="pull-left">{{day}}</h3>
+                <div class="pull-right macros">
+
+                    <!--Calories: <span ng-bind="myFunc(breakfastArray[$index].nutrition.calories, lunchArray[$index].nutrition.calories, dinnerArray[$index].nutrition.calories)"> </span>kcal-->
+                    Protein: <span ng-bind="calcMacros(breakfastArray[$index].nutrition.protein, lunchArray[$index].nutrition.protein, dinnerArray[$index].nutrition.protein) | number"> </span>g
+                    Carbohydrates: <span ng-bind="calcMacros(breakfastArray[$index].nutrition.carbohydrates, lunchArray[$index].nutrition.carbohydrates, dinnerArray[$index].nutrition.carbohydrates)"> </span>g
+                    Fats: <span ng-bind="calcMacros(breakfastArray[$index].nutrition.totalFat, lunchArray[$index].nutrition.totalFat, dinnerArray[$index].nutrition.totalFat)"> </span>g
+                    <!--<p> protein:{{ breakfastArray[$index].nutrition.protein + lunchArray[$index].nutrition.protein + dinnerArray[$index].nutrition.protein}}</p>-->
+                    <!--<p> carbs:{{ breakfastArray[$index].nutrition.carbohydrates + lunchArray[$index].nutrition.carbohydrates + dinnerArray[$index].nutrition.carbohydrates}}</p>-->
+                    <!--<p> fat:{{ breakfastArray[$index].nutrition.totalFat + lunchArray[$index].nutrition.totalFat + dinnerArray[$index].nutrition.totalFat}}</p>-->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <!-- if false then have a box with Log Food, which is where the users can add meals to later-->
+                <div ng-if="mealsType.breakfast" >
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <a ui-sref="recipe({selectedRecipeId: breakfastArray[$index]._id})" target="_blank"><span class="md-headline">{{breakfastArray[$index].name}}</span></a>
+                                <span ng-if="breakfastArray[$index].nutrition.calories" class="md-subhead">Calories: {{breakfastArray[$index].nutrition.calories}}kcal </span>
+                            </md-card-title-text>
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media" ng-if="breakfastArray[$index].image.smallImage"><img src="{{breakfastArray[$index].image.smallImage}}"/></div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <md-card-actions layout="row" layout-align="end center">
+                            <md-button ng-click="delete('Breakfast', $index)">Delete</md-button>
+                            <md-button ng-click="remove('Breakfast', $index)">Change</md-button>
+                            <md-button ng-click="refresh('Breakfast',$index)">Refresh Suggestion</md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+                <div ng-if="mealsType.breakfast == false">
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <a ng-if="breakfastArray[$index].image.smallImage" ui-sref="recipe({selectedRecipeId: breakfastArray[$index]._id})" target="_blank"><span class="md-headline">{{breakfastArray[$index].name}}</span></a>
+                                <span ng-if="!breakfastArray[$index].image.smallImage" class="md-headline">{{breakfastArray[$index].name}}</span>
+                            </md-card-title-text>
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media" ng-if="breakfastArray[$index].image.smallImage"><img src="{{breakfastArray[$index].image.smallImage}}"/></div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <md-card-actions layout="row" layout-align="end center">
+                            <md-button ng-if="breakfastArray[$index].name" ng-click="delete('Breakfast', $index)">Delete</md-button>
+                            <md-button ng-click="remove('Breakfast', $index)">Add</md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div ng-if="mealsType.lunch">
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <a ui-sref="recipe({selectedRecipeId: lunchArray[$index]._id})" target="_blank"><span class="md-headline">{{lunchArray[$index].name}}</span></a>
+                                <span  ng-if="lunchArray[$index].nutrition.calories" class="md-subhead">Calories: {{lunchArray[$index].nutrition.calories}}kcal </span>
+                            </md-card-title-text>
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media" ng-if="lunchArray[$index].image.smallImage"><img src="{{lunchArray[$index].image.smallImage}}"/></div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <md-card-actions layout="row" layout-align="end center">
+                            <md-button ng-click="delete('Lunch', $index)">Delete</md-button>
+                            <md-button ng-click="remove('Lunch', $index)">Change</md-button>
+                            <md-button ng-click="refresh('Lunch',$index)">Refresh Suggestion</md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+                <div ng-if="mealsType.lunch == false">
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <a ng-if="lunchArray[$index].image.smallImage" ui-sref="recipe({selectedRecipeId: lunchArray[$index]._id})" target="_blank"><span class="md-headline">{{lunchArray[$index].name}}</span></a>
+                                <span ng-if="!lunchArray[$index].image.smallImage" class="md-headline">{{lunchArray[$index].name}}</span>
+                            </md-card-title-text>
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media" ng-if="lunchArray[$index].image.smallImage"><img src="{{lunchArray[$index].image.smallImage}}"/></div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <md-card-actions layout="row" layout-align="end center">
+                            <md-button ng-if="lunchArray[$index].name" ng-click="delete('Lunch', $index)">Delete</md-button>
+                            <md-button ng-click="remove('Lunch', $index)">Add</md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div ng-if="mealsType.dinner">
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <a ui-sref="recipe({selectedRecipeId: dinnerArray[$index]._id})" target="_blank"><span class="md-headline" ng-model="formData.dinner[$index]">{{dinnerArray[$index].name}}</span></a>
+                                <span  ng-if="dinnerArray[$index].nutrition.calories"  class="md-subhead">Calories: {{dinnerArray[$index].nutrition.calories}}kcal </span>
+                            </md-card-title-text>
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media"> <img src="{{dinnerArray[$index].image.smallImage}}"/> </div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <md-card-actions layout="row" layout-align="end center">
+                            <md-button ng-click="delete('Dinner', $index)">Delete</md-button>
+                            <md-button ng-click="remove('Dinner', $index)">Change</md-button>
+                            <md-button ng-click="refresh('Dinner',$index)">Refresh Suggestion</md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+                <div ng-if="mealsType.dinner == false">
+                    <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <a ng-if="dinnerArray[$index].image.smallImage" ui-sref="recipe({selectedRecipeId: dinnerArray[$index]._id})" target="_blank"><span class="md-headline">{{dinnerArray[$index].name}}</span></a>
+                                <span ng-if="!dinnerArray[$index].image.smallImage" class="md-headline">{{dinnerArray[$index].name}}</span>
+                            </md-card-title-text>
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media" ng-if="dinnerArray[$index].image.smallImage"><img src="{{dinnerArray[$index].image.smallImage}}"/></div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <md-card-actions layout="row" layout-align="end center">
+                            <md-button ng-if="dinnerArray[$index].name" ng-click="delete('Dinner', $index)">Delete</md-button>
+                            <md-button ng-click="remove('Dinner', $index)">Add</md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</script>
+<script type="text/ng-template" id="delete-modal.html">
+    <div template="meal-plan">
+
+        <div class="modal-header">
+        </div>
+        <div ng-show="error">
+            <div class="alert alert-danger" role="alert">Still need to choose {{left}} more</div>
+        </div>
+
+        <div class="modal-body">
+            <md-button ng-click="likes($index)">Choose recipe from likes</md-button>
+            <md-button ng-click="out($index)">Eating out?</md-button>
+            <md-button ng-click="search($index)">Search for recipe</md-button>
+            <md-button ng-click="own($index)">Add your own food</md-button>
+            <div ng-if="clickedLikes">
+                <ul ng-repeat="likes in usersLikes track by $index">
+                    <li><a ng-click="replace($index)">{{likes}}</a></li>
+                </ul>
+            </div>
+            <div ng-if="searchClicked">
+                <h1>Find a recipe</h1>
+                <p>Separate ingredients with a [space]</p>
+                <input type="text" ng-model="search.input" class="form-control">
+                <button id="btn" type="button" class="btn btn-primary col-md-offset-5 col-xs-offset-5 col-lg-offset-5" ng-click="searchClick(search.input)">Search</button>
+
+                <div ng-repeat="x in x" style="margin-left: auto; margin-top: 10px">
+                    <div ng-if="x.image.smallImage.length > 0">
+                        <ul class="mpRecipeList">
+                            <img src="{{x.image.smallImage}}" width="50px">
+                            <a ui-sref="recipe({selectedRecipeId: x._id})" target="_blank" class="hyphenate">{{x.name}}</a>
+                            <md-button ng-click="add($index)" class="md-raised pull-right">+</md-button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="clickedInputIngredients">
+                <fieldset  data-ng-repeat="choice in choices">
+                    <div class="col-md-6 col-xs-6">Enter Food Name:</div><div class="col-md-6 col-xs-6"> <input type="text" ng-model="choice.name" name="" placeholder="Enter food" ></div> <br>
+                    <div class="col-md-6 col-xs-6">Enter calories (kcal):</div><div class="col-md-6 col-xs-6"> <input type="number" ng-model="choice.nutrition.calories" name="" placeholder="Enter calories" min="0"></div> <br>
+                    <div class="col-md-6 col-xs-6">Enter fats (g):</div> <div class="col-md-6 col-xs-6"><input type="number" ng-model="choice.nutrition.totalFat" name="" placeholder="Enter total fats" min="0"></div><br>
+                    <div class="col-md-6 col-xs-6">Enter protein (g):</div><div class="col-md-6 col-xs-6"> <input type="number" ng-model="choice.nutrition.protein" name="" placeholder="Enter proteins" min="0"> </div><br>
+                    <div class="col-md-6 col-xs-6" style="border-bottom: 1px solid black">Enter carbohydrates (g):</div><div class="col-md-6 col-xs-6"> <input type="number" ng-model="choice.nutrition.carbohydrates" name="" placeholder="Enter carbohydrates" min="0"> </div><br>
+                    <md-button class="remove md-primary md-raised" ng-show="$last" ng-click="removeChoice()">-</md-button>
+                </fieldset>
+                <md-button class="addfields md-primary md-raised" ng-click="addNewChoice()">Add fields</md-button>
+                <md-button class="addfields md-primary md-raised" ng-click="addIngredients()">Done</md-button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class='footer-stuff'>
+            <!--<button class='btn next' >Next</button>-->
+        </div>
+    </div>
+    </div>
+</script>

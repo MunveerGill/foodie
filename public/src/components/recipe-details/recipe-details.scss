@@ -1,0 +1,86 @@
+[template=recipe-details] {
+  H2 {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #424242;
+    margin-bottom: 0px;
+  }
+
+  .img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 23px 32px 39px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+  }
+  .image{
+    background-image: url("../../static/img/new.jpg");
+    background-position: center;
+    color: white;  
+  }
+  .bar{
+    background-color: #EF6C00;
+    color: white;
+  }
+  .border-right{
+    border-right: 18px solid  #424242;
+  }
+  .nutrition{
+    background-color: #E0E0E0;
+  }
+
+  @media (max-width: 979px) {
+    .border-right{
+      border: none;
+    }
+  }
+  #like-button {
+    position:absolute;
+    transition: .5s ease;
+    right: 0%;
+  }
+  #review{
+    width: 400px;
+  }
+  #icons{
+    margin-left: 0;
+  }
+
+  .headings{
+    border-bottom: 1px solid black;
+  }
+  .ingredients-list__item:nth-child(odd) {
+    background: #FFE0B2;
+    list-style: none;
+    margin-left: auto;
+  }
+  .ingredients-list__content {
+    padding: 4%;
+    border: 1px solid #eaeaea;
+    border-bottom: 0;
+    position: relative;
+  }
+  .ingredients-list__group {
+    margin: 0;
+    list-style: none;
+  }
+  .md-subheader-inner{
+    background-color: #FFE0B2;
+  }
+  .reviewBox{
+    margin-top: 10px;
+    border: 1px solid black;
+
+  }
+  .reviewBtn{
+    text-align: center;
+  }
+  .social{
+    width: 30px;
+  }
+}

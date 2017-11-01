@@ -1,0 +1,28 @@
+<script type="text/ng-template" id="nav-bar.html">
+    <div template="nav-bar">
+         <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--INSERT LOGO HERE -->
+                    <a ui-sref="home" class="pull-left" ><img src="../../static/img/Foodie-Logo-white-text.png" id="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-if="!loggedIN"><a ui-sref="login">Login</a></li>
+                        <li ng-if="loggedIN"><a ui-sref="user-dashboard">Dashboard</a></li>
+                        <!--<li ng-if="loggedIN"><a ui-sref="create-meal-plan">Create Meal Plan</a></li>-->
+                        <!--<li ng-if="loggedIN"><a ui-sref="view-meal-plan">View Meal Plan</a></li>-->
+                        <li ng-if="loggedIN"><a ui-sref="settings-plan">Settings</a></li>
+                        <li ng-if="loggedIN"><a ng-click="logout()" class="pointer">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</script>

@@ -1,0 +1,42 @@
+<script type="text/ng-template" id="register.html">
+    <div template="register">
+        <form class="form-signin margin">
+            <h3 class="text-center">Register</h3>
+            <!--<label>E-Mail</label>-->
+            <!--<input type="email" class="form-control" placeholder="Text input" ng-model="email">-->
+            <md-input-container class="md-block text " flex-gt-sm>
+                <label class="text">Email</label>
+                <input ng-model="email" required class="text" type="email">
+            </md-input-container>
+
+            <!--<label>Password</label>-->
+            <!--<input type="password" class="form-control" placeholder="Text input"ng-model="password">-->
+            <md-input-container class="md-block text " flex-gt-sm>
+                <label class="text">Password</label>
+                <input ng-model="password" required class="text" type="password">
+            </md-input-container>
+
+            <!--<label>First Name</label>-->
+            <!--<input type="text" class="form-control" placeholder="Text input" ng-model="firstname">-->
+            <md-input-container class="md-block text " flex-gt-sm>
+                <label class="text">First Name</label>
+                <input ng-model="firstname" required class="text">
+            </md-input-container>
+
+
+            <!--<button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="register(email, password, firstname)">Register</button>-->
+            <md-button class="md-raised md-primary loginBtn" type="submit" ng-click="register(email, password, firstname)">Register</md-button>
+
+        </form>
+    </div>
+</script>
+<script type="text/ng-template" id="success-modal.html">
+    <div template="take-pulse-check">
+        <div class="modal-header">
+            <h4>Registration complete</h4>
+        </div>
+        <div class="modal-body">
+            <button class="btn btn-primary" type="button" ng-click="ok(email, password)">OK</button>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,26 @@
+<script type="text/ng-template" id="login.html">
+    <div template="login">
+        <!--<div class="background-image">-->
+            <form class="form-signin">
+                <h3 class="center-header">Log In</h3>
+                <!--<label>E-Mail</label>-->
+                <md-input-container class="md-block text " flex-gt-sm>
+                    <label class="text">Email</label>
+                    <input ng-model="email" required class="text">
+                </md-input-container>
+                <!--<input type="email" class="form-control" placeholder="Text input" ng-model="email" required>-->
+                <!--<label>Password</label>-->
+                <!--<input type="password" class="form-control" placeholder="Text input"ng-model="password" required>-->
+                <md-input-container class="md-block text" flex-gt-sm>
+                    <label class="text">Password</label>
+                    <input type="password" ng-model="password" required class="text">
+                </md-input-container>
+                <md-button class="md-raised md-primary loginBtn" type="submit" ng-click="login(email, password)">Log In</md-button>
+
+                <!--<button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login(email, password)">Log In</button>-->
+                <p class="text-center"> Don't have an account? Register <a ui-sref="register">here</a></p>
+            </form>
+        <!--</div>-->
+
+    </div>
+</script>
