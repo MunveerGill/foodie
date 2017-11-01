@@ -1,2 +1,0 @@
-# foodie
-Food recommender system
